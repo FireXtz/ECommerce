@@ -1,0 +1,369 @@
+<html lang="en" xmlns:th=http://www.thymeleaf.org
+      xmlns:sec=http://www.thymeleaf.org/extras/spring-security
+      xmlns:shiro=http://www.pollix.at/thymeleaf/shiro>
+<head>
+    <meta charset="UTF-8">
+    <title>Bitwise</title>
+    <link th:href="@{/static/css/main.css}" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mukta:300,400,700">
+    <link rel="stylesheet" th:href="@{fonts/icomoon/style.css}">
+
+    <link rel="stylesheet" th:href="@{css/bootstrap.min.css}">
+    <link rel="stylesheet" th:href="@{css/magnific-popup.css}">
+
+    <link rel="stylesheet" th:href="@{css/jquery-ui.css}">
+    <link rel="stylesheet" th:href="@{css/owl.carousel.min.css}">
+
+    <link rel="stylesheet" th:href="@{css/owl.theme.default.min.css}">
+    <link rel="stylesheet" th:href="@{css/aos.css}">
+
+    <link rel="stylesheet" th:href="@{css/style.css}">
+
+
+</head>
+<body>
+
+<div class="site-wrap">
+  <header class="site-navbar" role="banner">
+      <div class="row align-items-center">
+          <div class="col-6 col-md-4 order-2 order-md-1 site-search-icon text-left">
+              <form action="" class="site-block-top-search">
+                  <span class="icon icon-search2"></span>
+                  <input type="text" class="form-control border-0" placeholder="Pesquisar">
+              </form>
+          </div>
+
+          <div class="col-12 mb-3 mb-md-0 col-md-4 order-1 order-md-2 text-center">
+              <div class="site-logo">
+                  <a class="js-logo-clone">BitWise</a>
+              </div>
+          </div>
+
+          <div class="col-6 col-md-4 order-3 order-md-3 text-right">
+              <div class="site-top-icons">
+                  <ul>
+                      <li><a href="#"><span class="icon icon-person"></span></a></li>
+                      <li><a href="#"><span class="icon icon-heart-o"></span></a></li>
+                      <li>
+                          <a href="cart.html" class="site-cart">
+                              <span class="icon icon-shopping_cart"></span>
+                              <span class="count">2</span>
+                          </a>
+                      </li>
+                      <li class="d-inline-block d-md-none ml-md-0"><a href="#" class="site-menu-toggle js-menu-toggle"><span class="icon-menu"></span></a></li>
+                   </ul>
+               </div>
+           </div>
+       </div>
+      <nav class="site-navigation text-right text-md-center" role="navigation">
+          <div class="container">
+              <ul class="site-menu js-clone-nav d-none d-md-block">
+                  <li class="has-children active">
+                      <a href="index.html">Departamentos</a>
+                      <ul class="dropdown">
+                          <li><a href="#">Hardware</a></li>
+                          <li><a href="#">Games</a></li>
+                          <li><a href="#">Computadores</a></li>
+                          <li class="has-children">
+                              <a href="#">Celular & Telefone</a>
+                              <ul class="dropdown">
+                                  <li><a href="#">Telefones</a></li>
+                                  <li><a href="#">SmartPhone</a></li>
+                              </ul>
+                          </li>
+                      </ul>
+                  </li>
+                  <li class="has-children">
+                      <a href="about.html">Sobre</a>
+                      <ul class="dropdown">
+                          <li><a href="#">Desenvolvedor</a></li>
+                          <li><a href="#">Versão</a></li>
+                          <li><a href="#">Proximas atualizações</a></li>
+                      </ul>
+                  </li>
+                  <li><a href="shop.html">Comprar</a></li>
+                  <li><a href="#">Novidades</a></li>
+                  <li><a href="#">Escritório</a></li>
+                  <li><a href="contact.html">Contato</a></li>
+              </ul>
+          </div>
+      </nav>
+
+   </header>
+    <div class="container">
+        <img class="site-blocks-cover" th:src="@{/images/Spider1.jpg}">
+        <div class="row align-items-start align-items-md-center justify-content-end">
+            <div style="margin-top: -150px;,padding-left: 5em;"  class="col-md-6 text-center text-md-left pt-6 pt-md-0">
+                <h1 style="color:white" class="mb-12">Be Greater</h1>
+                <div class="intro-text text-center text-md-left">
+                    <p style="color:white" class="mb-2">"Supere seus limites e com grandes poderes vêm grandes responsabilidades."</p>
+                    <p>
+                        <a href="#" class="btn btn-sm btn-primary">Comprar</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="site-section site-section-sm site-blocks-1">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-lg-4 d-lg-flex mb-4 mb-lg-0 pl-4" data-aos="fade-up" data-aos-delay="">
+                <div class="icon mr-4 align-self-start">
+                    <span class="icon-truck"></span>
+                </div>
+                <div class="text">
+                    <h2 class="text-uppercase">Frete Gratis</h2>
+                    <p>Frete gratis em produtos acima de R$100. Envio para todo o Brasil. Cadastre-se já no BitWise.com.</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 d-lg-flex mb-4 mb-lg-0 pl-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="icon mr-4 align-self-start">
+                    <span class="icon-refresh2"></span>
+                </div>
+                <div class="text">
+                    <h2 class="text-uppercase">Reembolso</h2>
+                    <p>Você pode solicitar um reembolso até 30 dias após a compra. Ao solicitar um reembolso, a sua compra será cancelada e você não terá mais acesso ao produto.</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 d-lg-flex mb-4 mb-lg-0 pl-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="icon mr-4 align-self-start">
+                    <span class="icon-help"></span>
+                </div>
+                <div class="text">
+                    <h2 class="text-uppercase">Suporte ao Consumidor</h2>
+                    <p>Que tal verificar de perto os benefícios do BitWise? Faça já o seu cadastro é simples e rápido.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="site-section block-3 site-blocks-2 bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 col-md-6 col-lg-4 mb-4 mb-lg-0" data-aos="fade" data-aos-delay="">
+                <a class="block-2-item" href="#">
+                    <figure class="image">
+                        <img src="images/blackPs5.jpg" alt="" class="img-fluid">
+                    </figure>
+                    <div class="text">
+                        <span class="text-uppercase">PlayStation</span>
+                        <h3>PS5</h3>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-4 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="100">
+                <a class="block-2-item" href="#">
+                    <figure class="image">
+                        <img src="images/xboxX.jpg" alt="" class="img-fluid">
+                    </figure>
+                    <div class="text">
+                        <span class="text-uppercase">Xbox Series</span>
+                        <h3>Xbox Series X</h3>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-4 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="200">
+                <a class="block-2-item" href="#">
+                    <figure class="image">
+                        <img src="images/PcGAmerRGB.jpg" alt="" class="img-fluid">
+                    </figure>
+                    <div class="text">
+                        <span class="text-uppercase">PC</span>
+                        <h3>PC-GAMER</h3>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="site-section block-3 site-blocks-2 bg-light">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-7 site-section-heading text-center pt-4">
+                <h2>Linha Gamer</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="nonloop-block-3 owl-carousel">
+                    <div class="item">
+                        <div class="block-4 text-center">
+                            <figure class="block-4-image">
+                                <img src="images/CadeiraGamer.jpg" alt="Image placeholder" class="img-fluid">
+                            </figure>
+                            <div class="block-4-text p-4">
+                                <h3><a href="#">Cadeira Gamer</a></h3>
+                                <p class="mb-0">Mais conforto na sua jogatina.</p>
+                                <p class="text-primary font-weight-bold">R$800</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="block-4 text-center">
+                            <figure class="block-4-image">
+                                <img src="images/MesaGamer.webp" alt="Image placeholder" class="img-fluid">
+                            </figure>
+                            <div class="block-4-text p-4">
+                                <h3><a href="#">Mesa Gamer</a></h3>
+                                <p class="mb-0">Suporta os "Rages" por longas jogatinas.</p>
+                                <p class="text-primary font-weight-bold">R$600</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="block-4 text-center">
+                            <figure class="block-4-image">
+                                <img src="images/RazerFone.jpg" alt="Image placeholder" class="img-fluid">
+                            </figure>
+                            <div class="block-4-text p-4">
+                                <h3><a href="#">HeadSet</a></h3>
+                                <p class="mb-0">Versáteis para jogos em casa e para uso na rua. </p>
+                                <p class="text-primary font-weight-bold">R$550</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="block-4 text-center">
+                            <figure class="block-4-image">
+                                <img src="images/KitTecladoMouse.jpg" alt="Image placeholder" class="img-fluid">
+                            </figure>
+                            <div class="block-4-text p-4">
+                                <h3><a href="#">Kit Teclado E Mouse</a></h3>
+                                <p class="mb-0">Compre kit gamer teclado + mouse, aproveite os descontos e as ofertas da BitWise</p>
+                                <p class="text-primary font-weight-bold">R$350</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="block-4 text-center">
+                            <figure class="block-4-image">
+                                <img src="images/ControlePs5.png" alt="Image placeholder" class="img-fluid">
+                            </figure>
+                            <div class="block-4-text p-4">
+                                <h3><a href="#">Controles</a></h3>
+                                <p class="mb-0">Controles de qualidade para PS4,PS5,XBOX e PC</p>
+                                <p class="text-primary font-weight-bold">R$450</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="site-section block-8">
+    <div class="container">
+        <div class="row justify-content-center  mb-5">
+            <div class="col-md-7 site-section-heading text-center pt-4">
+                <h2>Novidades!</h2>
+            </div>
+        </div>
+        <div class="row align-items-center">
+            <div class="col-md-12 col-lg-7 mb-5">
+                <a href="#"><img src="images/Firefox_wallpaper.png" alt="Image placeholder" class="img-fluid rounded"></a>
+            </div>
+            <div class="col-md-12 col-lg-5 text-center pl-md-5">
+                <h2><a href="#">30% de desconto na compra de qualquer produto na loja</a></h2>
+                <p class="post-meta mb-4">By <a href="#">Vegeta</a> <span class="block-8-sep">&bullet;</span> Janeiro 3, 2023</p>
+                <p>"O melhor guerreiro não é aquele que sempre ganha, mas o que mantém o seu orgulho mesmo na derrota"</p>
+                <p><a href="#" class="btn btn-primary btn-sm">Compre Já!!!</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<footer class="site-footer border-top">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 mb-5 mb-lg-0">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3 class="footer-heading mb-4">Navegação</h3>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <ul class="list-unstyled">
+                            <li><a href="#">vendas online</a></li>
+                            <li><a href="#">Produtos</a></li>
+                            <li><a href="#">Carrinho de compras</a></li>
+                            <li><a href="#">Lojas</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <ul class="list-unstyled">
+                            <li><a href="#">Mobile commerce</a></li>
+                            <li><a href="#">Dropshipping</a></li>
+                            <li><a href="#">Java Web development</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <ul class="list-unstyled">
+                            <li><a href="#">Pontos de vendas</a></li>
+                            <li><a href="#">Hardware</a></li>
+                            <li><a href="#">Software</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
+                <h3 class="footer-heading mb-4">Promoções</h3>
+                <a href="#" class="block-6">
+                    <img src="images/ps5.png" alt="Image placeholder" class="img-fluid rounded mb-4">
+                    <h3 class="font-weight-light  mb-0">Novos equipamentos Gamer disponíveis</h3>
+                    <p>Promoção até  15 Fevereiro &mdash; 2023</p>
+                </a>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="block-5 mb-5">
+                    <h3 class="footer-heading mb-4">Informações para Contato</h3>
+                    <ul class="list-unstyled">
+                        <li class="address">203 St St. St St, St St, St, Brasil</li>
+                        <li class="phone"><a href="tel://23923929210">+(00)00000-0000</a></li>
+                        <li class="email">https://github.com/FireXtz</li>
+                    </ul>
+                </div>
+
+                <div class="block-7">
+                    <form action="#" method="post">
+                        <label for="email_subscribe" class="footer-heading">Enviar</label>
+                        <div class="form-group">
+                            <input type="text" class="form-control py-4" id="email_subscribe" placeholder="Email">
+                            <input type="submit" class="btn btn-sm btn-primary" value="Send">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="row pt-5 mt-5 text-center">
+            <div class="col-md-12">
+                <p>
+
+                    Copyright &copy;<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>document.write(new Date().getFullYear());</script> All rights reserved |  </i> By <a href="https://github.com/FireXtz" target="_blank" class="text-primary">Jarmison</a>
+
+                </p>
+            </div>
+
+        </div>
+    </div>
+</footer>
+</div>
+
+<script th:src="@{js/jquery-3.3.1.min.js}"></script>
+<script th:src="@{js/jquery-ui.js}"></script>
+<script th:src="@{js/popper.min.js}"></script>
+<script th:src="@{js/bootstrap.min.js}"></script>
+<script th:src="@{js/owl.carousel.min.js}"></script>
+<script th:src="@{js/jquery.magnific-popup.min.js}"></script>
+<script th:src="@{js/aos.js}"></script>
+<script th:src="@{js/main.js}"></script>
+
+ </body>
+
+</html>
+
